@@ -1,0 +1,149 @@
+/* CSS Reset */
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Header */
+.header {
+    margin: 3vh 0;
+    height: 8vh;
+    background-color: rgb(198, 198, 198);
+}
+
+.main-header {
+    width: 18%;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+.main-header a {
+    display: inline-block;
+    padding-top: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* CSS Left */
+.left {
+    margin-top: 1vh;
+    width: 25vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.satu {
+    border-radius: 6px;
+    width: 3vw;
+    height: 6vh;
+    background-color: purple;
+}
+
+.dua {
+    border-radius: 6px;
+    width: 3vw;
+    height: 6vh;
+    background-color: blue;
+}
+
+.tiga {
+    border-radius: 6px;
+    width: 3vw;
+    height: 6vh;
+    background-color: orangered;
+}
+
+.empat {
+    border-radius: 6px;
+    width: 3vw;
+    height: 6vh;
+    background-color: black;
+}
+
+.lima {
+    border-radius: 6px;
+    width: 3vw;
+    height: 6vh;
+    background-color: brown;
+}
+
+/* CSS Product */
+.product {
+    margin-top: 3vh;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 3vh;
+    width: 35vw;
+    height: 75vh;
+}
+
+.product img {
+    padding: 6vh 1vh;
+    max-width: 40vw;
+    max-height: 50vh;
+}
+
+/* CSS Right */
+.right {
+    margin-top: -10vh;
+    margin-left: 10px;
+    width: 30vw;
+    height: 50vh;
+}
+
+.right h2 {
+    margin-bottom: 1vh;
+}
+
+.right button {
+    margin-top: 1vh;
+    width: 30vw;
+    height: 3vh;
+    background-color: pink;
+    margin-bottom: 8vh;
+}
+
+/* CSS Footer */
+footer {
+    background-color: rgb(198, 198, 198);
+    margin-top: 8vh;
+    height: 40vh;
+}
+
+footer h2 {
+    margin-top: 10vh;
+    margin-bottom: 9vh;
+    padding-top: 4vh;
+    text-align: center;
+}
+
+.footer-start,
+.footer-mid,
+.footer-end {
+    display: flex;
+    flex-direction: column;
+}
+
+.tb-foot {
+    margin: auto;
+}
+
+.tb-foot a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-start {
+    position: relative;
+    left: -50vh;
+}
+
+.footer-end {
+    position: relative;
+    left: 50vh;
+}
