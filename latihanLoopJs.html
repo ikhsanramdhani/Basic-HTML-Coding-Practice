@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const mahasiswa = [
+            {
+                name: "John",
+                GPA: 3.2,
+                postgraduate: true,
+                mastery: ["ReactJs", "AngularJs", "VueJs"],
+            },
+            {
+                name: "Bob",
+                GPA: 3.8,
+                postgraduate: false,
+                mastery: ["Laravel 9", "Codeigniter 3", "PHP Native"],
+            },
+            {
+                name: "Ryan",
+                GPA: 2.4,
+                postgraduate: false,
+                mastery: ["Golang", "NodeJs", "Spring"],
+            },
+            {
+                name: "Tim",
+                GPA: 2.8,
+                postgraduate: true,
+                mastery: ["Ionic", "Flutter"],
+            },
+            {
+                name: "Harry",
+                GPA: 4.0,
+                postgraduate: false,
+                mastery: ["Codeigniter 3", "ReactJs", "C#"],
+            },
+            {
+                name: "Ryan",
+                GPA: 2.4,
+                postgraduate: false,
+                mastery: ["Codeigniter 3", "Flutter", "Laravel 9"],
+            },
+            {
+                name: "Eric",
+                GPA: 1.5,
+                postgraduate: false,
+                mastery: ["Codeigniter 3"],
+            },
+            {
+                name: "Bryan",
+                GPA: 3.5,
+                postgraduate: true,
+                mastery: ["Golang", "C#", "NodeJs"],
+            },
+            {
+                name: "Agus",
+                GPA: 3.5,
+                postgraduate: false,
+                mastery: ["AngularJs", "Laravel 9", "Laravel 8"],
+            },
+            {
+                name: "Sean",
+                GPA: 1.0,
+                postgraduate: false,
+                mastery: [],
+            },
+        ];
+
+        const bachelorDegree = [];
+        const postGraduate = [];
+
+        for (let i = 0; i < mahasiswa.length; i++) {
+            if (mahasiswa[i].postgraduate) {
+
+                let obj = new Object();
+                obj = {
+                    name: mahasiswa[i].name,
+                    mastery: mahasiswa[i].mastery
+                }
+
+                postGraduate.push(obj);
+            } else {
+
+                let obj = new Object();
+                obj = {
+                    name: mahasiswa[i].name,
+                    GPA: mahasiswa[i].GPA
+                }
+
+                bachelorDegree.push(obj);
+            }
+        }
+
+        console.log('\nMahasiswa S2');
+
+        for (let j = 0; j < postGraduate.length; j++) {
+            console.log(`Nama : ${postGraduate[j].name}`);
+            console.log(`Keahlian : ${postGraduate[j].mastery}`);
+        }
+
+        console.log("\nMahasiswa S1");
+
+        for (let k = 0; k < bachelorDegree.length; k++) {
+            console.log(`Nama : ${bachelorDegree[k].name}`);
+            console.log(`IPK : ${bachelorDegree[k].GPA}`);
+        }
+
+    </script>
+</body>
+
+</html>
