@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxSpace</title>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="Luxspace"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Showcase</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Rewards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="assets/cart-icon.png" alt="Cart"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="alert alert-danger alert-dismissible fade show text-dark d-none" id="divAlert" role="alert">
+        <label id="alertText"></label>
+        <button type="button" class="close">
+            <span id="btnClose">&times;</span>
+        </button>
+    </div>
+
+    <!-- Head Left -->
+    <div class="bg-light" style="width: 100vw; height: 8vh;">
+        <div class="p-3 ml-3">
+            <a class="text-dark" href="#">Home</a> /
+            <a class="text-dark" href="#">Office Room</a> /
+            <a class="text-dark" href="index.html"><b>Detail</b></a>
+
+        </div>
+    </div>
+    <!-- End Head Left -->
+
+    <!-- Main Product -->
+    <div class="container-fluid d-flex mt-4 justify-content-between">
+
+        <!-- Left -->
+        <div class="col-2" style="width: 10vw; height: 80vh;">
+            <div class="d-flex flex-column align-items-end mt-5">
+                <div class="p-1 py-3">
+                    <img src="assets/side-1.png" class="rounded" alt="Side 1" style="width: 5vw;">
+                </div>
+                <div class="p-1 py-3">
+                    <img src="assets/side-2.png" class="rounded" alt="Side 2" style="width: 5vw;">
+                </div>
+                <div class="p-1 py-3">
+                    <img src="assets/side-3.png" class="rounded" alt="Side 3" style="width: 5vw;">
+                </div>
+                <div class="p-1 py-3">
+                    <img src="assets/side-1.png" class="rounded" alt="Side 4" style="width: 5vw;">
+                </div>
+                <div class="p-1 py-3">
+                    <img src="assets/side-2.png" class="rounded border border-dark" alt="Side 5" style="width: 5vw;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Center -->
+        <div class="col-5" style="width: 10vw; height: 85vh;">
+            <div class="d-flex flex-column mt-2">
+                <div class="p-0 pr-4" id="imgParent">
+                    <img src="assets/chair.png" style="width: 35vw; height:75vh;" class="rounded" alt="chair">
+                </div>
+            </div>
+        </div>
+
+        <!-- Right -->
+        <div class="col-4" style="width: 10vw; height: 55vh;">
+            <h1 class="mt-4">Chair Thatty</h1>
+            <p>IDR 12.000.000</p>
+            <a href="shipping.html">
+                <button type="submit" class="px-4 p-2"
+                    style=" background-color: pink; border-style: none; border-radius: 10px;">
+                    <img src="assets/cart-icon.png" class="mr-2" alt="cart"><b> Add to cart</b>
+                </button>
+            </a>
+            <hr>
+            <p><b>About the product:</b></p>
+            <p>Tailored to a level of perfection synonymous with that of a Savile Row suit and with understated
+                quality in the detail, Jetty has been influenced by timeless 1950s style.</p>
+            <p>Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work today.
+                A compherensive product family, Jetty features a variety of elegant chairs and sofas.</p>
+        </div>
+    </div>
+    <!-- End Main Product -->
+
+    <!-- After Product Left -->
+    <div class="col-12 mt-5 p-5">
+        <h3><b>Complete Your Room</b></h3>
+        <h3><b>With What We Designed</b></h3>
+    </div>
+    <!-- End After Product Left -->
+
+    <!-- List Product -->
+    <div class="container-fluid d-flex justify-content-between" style="width: 100vw; height: 50vh;" id="imgContent">
+        <div class="col-2">
+            <a href="#">
+                <img src="assets/chair-4.png" alt="Chair 1">
+            </a>
+            <h6 class="mt-2"><b>Cangkir Mauttie</b></h6>
+            <p>IDR 89.300.000</p>
+        </div>
+        <div class="col-2">
+            <a href="#">
+                <img src="assets/chair-3.png" alt="Chair 2">
+            </a>
+            <h6 class="mt-2"><b>Saman Kakka</b></h6>
+            <p>IDR 14.500.000</p>
+        </div>
+        <div class="col-2">
+            <a href="#">
+                <img src="assets/chair-2.png" alt="Chair 3">
+            </a>
+            <h6 class="mt-2"><b>Lino Dino</b></h6>
+            <p>IDR 22.000.000</p>
+        </div>
+        <div class="col-2">
+            <a href="#">
+                <img src="assets/chair-1.png" alt="Chair 4">
+            </a>
+            <h6 class="mt-2"><b>Syail Ammeno</b></h6>
+            <p>IDR 12.000.000</p>
+        </div>
+    </div>
+    <!-- End List Product -->
+
+    <!-- About Us -->
+    <div class="col-12 d-flex justify-content-center mt-5">
+        <img src="assets/logo.png" alt="">
+    </div>
+
+    <div id="divFoot" class="container-fluid d-flex justify-content-around"
+        style=" margin-top: 15vh;width: 100vw; height: 30vh;">
+
+        <div class="col-2 d-flex justify-content-center" style="width: 15vw; height:15vh">
+            <div class="d-flex flex-column">
+                <h4>Overview</h4>
+                <a class="text-dark" href="shipping.html">Shipping</a>
+                <a class="text-dark" href="#">Refund</a>
+                <a class="text-dark" href="#">Promotion</a>
+            </div>
+        </div>
+
+        <div class="col-2 d-flex justify-content-center" style="width: 15vw; height:15vh">
+            <div class="d-flex flex-column">
+                <h4>Company</h4>
+                <a class="text-dark" href="#">About</a>
+                <a class="text-dark" href="#">Career</a>
+                <a class="text-dark" href="#">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="col-2 d-flex justify-content-center" style="width: 15vw; height:15vh">
+            <div class="d-flex flex-column">
+                <h4>Explore</h4>
+                <a class="text-dark" href="#">Terms & Conds</a>
+                <a class="text-dark" href="#">Privacy Policy</a>
+                <a class="text-dark" href="#">For Developer</a>
+            </div>
+        </div>
+
+
+        <div class="col-4" style="width: 15vw; height:15vh">
+            <h4>Special Letter</h4>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" id="inputEmail" type="email" placeholder="Your Email Address">
+                <button type="submit" class="btn my-2 my-sm-0 bg-danger disabled" id="btnEmail">
+                    <img src="assets/tele-icon.png" alt="Tele">
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- End About Us -->
+
+    <!-- Footer -->
+    <footer class="mt-5 text-center">Copyright 2022 &bull; All Right Reserved LuxSpace by BuildWith Ikhsan</footer>
+    <!-- End Footer -->
+</body>
+
+</html>

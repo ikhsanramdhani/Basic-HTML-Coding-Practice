@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxSpace</title>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="Luxspace"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Showcase</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Rewards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="assets/cart-icon.png" alt="Cart"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="alert alert-danger alert-dismissible fade show text-dark d-none" id="divAlert" role="alert">
+        <label id="alertText"></label>
+        <button type="button" class="close">
+            <span id="btnClose">&times;</span>
+        </button>
+    </div>
+
+    <!-- Head Left -->
+    <div class="bg-light" style="width: 100vw; height: 8vh;">
+        <div class="p-3 ml-3">
+            <a class="text-dark" href="#">Home</a> /
+            <a class="text-dark" href="#">Office Room</a> /
+            <a class="text-dark" href="index.html">Detail</a> /
+            <a class="text-dark" href="#"><b>Shipping</b></a>
+        </div>
+    </div>
+    <!-- End Head Left -->
+
+    <main id="ship" class="container-fluid rounded mt-5" style="width: 50vw; height:100vh; border: 1px solid pink;">
+        <form class="p-3" id="formShip">
+            <center>
+                <h1 class="mt-4 mb-5">Shipping Form</h1>
+            </center>
+            <div class="form-row p-1">
+                <div class="form-group col-md-6">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control" placeholder="Enter phone number" required>
+                </div>
+            </div>
+            <div class="form-row p-1">
+                <div class="form-group col-md-6">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>City</label>
+                    <input type="text" class="form-control" placeholder="Enter city" required>
+                </div>
+            </div>
+            <div class="form-row p-1">
+                <div class="form-group col-md-6">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Enter email" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Postal Code</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Enter postal code"
+                        required>
+                </div>
+            </div>
+            <div class="form-group col-md-12 p-1">
+                <label>Address</label>
+                <textarea class="form-control" id="address" required placeholder="Enter Address" cols="20"
+                    rows="5"></textarea>
+            </div>
+            <button type="submit" id="btnShip" class="btn btn-danger disabled">Submit</button>
+        </form>
+    </main>
+
+    <main id="send" class="container-fluid rounded mt-5 p-3 d-none" style="width: 50vw; height:20vh;">
+        <label id="tq"></label><br>
+        <label id="info"></label><br>
+        <a href="index.html">
+            <button type="submit" id="btnBack" class="btn btn-danger disabled">Back</button>
+        </a>
+    </main>
+
+    <!-- About Us -->
+    <div class="col-12 d-flex justify-content-center mt-5">
+        <img src="assets/logo.png" alt="">
+    </div>
+
+    <div id="divFoot" class="container-fluid d-flex justify-content-around"
+        style=" margin-top: 15vh;width: 100vw; height: 30vh;">
+
+        <div class="col-3 d-flex justify-content-center" style="width: 15vw; height:15vh">
+            <div class="d-flex flex-column">
+                <h4>Overview</h4>
+                <a class="text-dark" href="shipping.html">Shipping</a>
+                <a class="text-dark" href="#">Refund</a>
+                <a class="text-dark" href="#">Promotion</a>
+            </div>
+        </div>
+
+        <div class="col-3 d-flex justify-content-center" style="width: 15vw; height:15vh">
+            <div class="d-flex flex-column">
+                <h4>Company</h4>
+                <a class="text-dark" href="#">About</a>
+                <a class="text-dark" href="#">Career</a>
+                <a class="text-dark" href="#">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="col-3 d-flex justify-content-center" style="width: 15vw; height:15vh">
+            <div class="d-flex flex-column">
+                <h4>Explore</h4>
+                <a class="text-dark" href="#">Terms & Conds</a>
+                <a class="text-dark" href="#">Privacy Policy</a>
+                <a class="text-dark" href="#">For Developer</a>
+            </div>
+        </div>
+    </div>
+    <!-- End About Us -->
+
+    <!-- Footer -->
+    <footer class="mt-5 text-center">Copyright 2022 &bull; All Right Reserved LuxSpace by BuildWith Ikhsan</footer>
+    <!-- End Footer -->
+</body>
+
+</html>
